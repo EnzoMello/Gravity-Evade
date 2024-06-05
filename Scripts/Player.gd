@@ -1,5 +1,5 @@
 extends KinematicBody2D
-class_name Player
+
 
 onready var powerTimer: Timer = get_node("PowerTimer")
 onready var button : Button = get_node("CanvasLayer/TimeSlow")

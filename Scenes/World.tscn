@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Fragment.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/Map/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Tileset/level_tileset.png" type="Texture" id=4]
 [ext_resource path="res://assets/Map/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/laser_spikes_idle.png" type="Texture" id=5]
 [ext_resource path="res://assets/Map/Foozle_2DT0001_Science_Fiction_Labs_Tileset/Traps/laser_idle.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Map/background1-3.png" type="Texture" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
 points = PoolVector2Array( 0, 3, 16, 3, 16, 16, 0, 16 )
@@ -608,3 +609,14 @@ position = Vector2( 19, 1 )
 
 [node name="Fragment" parent="." instance=ExtResource( 2 )]
 position = Vector2( 71, -16 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 1433.0
+margin_top = -24.125
+margin_right = 1473.0
+margin_bottom = 15.875
+
+[node name="Background1-3" type="Sprite" parent="TextureRect"]
+scale = Vector2( 1.50781, 0.561645 )
+z_index = -2
+texture = ExtResource( 7 )
